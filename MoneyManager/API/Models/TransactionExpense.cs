@@ -13,7 +13,7 @@ namespace API.Models
         [Key]
         public int Id { get; set; }
 
-        public ICollection<Transaction> Transactions { get; set; }
-        public ICollection<Expense> Expenses { get; set; }
+        public Transaction Transaction { get; set; }
+        public Expense Expense { get; set; }
     }
 }
