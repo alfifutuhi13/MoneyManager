@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace API.Repositories.Data
 {
-    public class AccountRepository : GeneralRepository<Account, MyContext, int >
+    public class TransactionExpenseRepository : GeneralRepository<TransactionExpense, MyContext, int>
     {
         private readonly MyContext context;
-        public AccountRepository(MyContext context) : base(context)
+        public TransactionExpenseRepository(MyContext context) : base(context)
         {
             this.context = context;
         }
